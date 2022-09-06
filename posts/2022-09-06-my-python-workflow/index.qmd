@@ -1,0 +1,100 @@
+---
+title: My Python Workflow
+description: This is my workflow when working on a Python project.
+author: David Onder
+date: '2022-09-06'
+slug: my-python-workflow
+categories: [blog, python]
+tags: [python, workflow]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-09-06T18:34:45-05:00'
+featured: no
+projects: []
+draft: false
+---
+
+This is my workflow when working on a Python project. It is written in the first
+person because it is a post to instruct me what to do (I sometimes forget
+what the next step is...).
+
+## Prerequisites
+
+This requires the following software to already be installed:
+
+- Python (Just install Miniconda as we will use environments for our work)
+- VS Code
+- Git for Windows (well, just Git, but I typically use Windows, so...)
+
+The installation and configuration of Git will be addressed in another blog post.
+Once you set it up, it works.
+
+## Initialize the folder
+
+I have created a Windows Batch file called `New_Python_Project.bat` that will
+create the project directory and the GitHub repository then initialize the 
+directory as a Python virtual environment with some common packages installed
+by default. The batch file requires `gh` to be available. You can find this 
+tool at [https://github.com/cli/cli] (https://github.com/cli/cli) and it should 
+be available on the path. 
+
+If you do not have the batch file, here is what it does to setup my environment.
+First, create a folder to use for this Python project and then change into that
+folder. Now we need to initialize Git and the Python environment, so from the
+command line, execute the following (NOTE: this requires `gh` to be available, 
+which can be found at [https://github.com/cli/cli] (https://github.com/cli/cli) 
+and it should be available on the path):
+
+```
+gh repo create dmonder/repo_name --private --disable-issues --disable-wiki
+gh repo clone ssh://github.com/dmonder/repo_name .
+```
+
+For a project that is part of HCC's organization, execute the following instead:
+```
+gh repo create Haywood-Community-College-IERG/repo_name --private --disable-issues --disable-wiki
+gh repo clone ssh://github.com/Haywood-Community-College-IERG/repo_name .
+```
+
+Now, create the README.md, Pipfile, license.txt, and .gitignore files and add
+them to the repository.
+
+```
+touch README.md
+touch Pipfile
+curl -s "https://api.github.com/licenses/lgpl-3.0" | jq -r ".body" > ./license.txt
+curl "https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore" -o .gitignore
+
+git add Pipfile
+git add README.md
+git add license.txt 
+git add .gitignore
+```
+
+Now we can commit these changes and push them to the repo in GitHub.
+
+```
+git commit -m "Initial commit"
+git push -u origin main
+```
+
+Now we can create the Python virtual environment. Issuing the following
+command will initialize the environment (in this case with version 3.9). You
+must have the version of Python you want to use installed on your computer.
+
+```
+pipenv --python 3.9
+```
+
+Now we can install the packages we need, which is typically pandas for all 
+projects and pycolleague for HCC projects. I will also install pylint and 
+ipykernal for VS Code.
+
+```
+pipenv install numpy pandas
+pipenv install git+ssh://git@github.com/Haywood-Community-College-IERG/pycolleague.git#egg=pycolleague
+pipenv install --dev pylint ipykernel
+```
+
+Now the environment is ready to go. Code away!

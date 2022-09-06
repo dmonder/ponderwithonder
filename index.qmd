@@ -1,0 +1,16 @@
+---
+title: "PondeR with OndeR"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dmonder/
+    - icon: github
+      text: Github
+      href: https://github.com/dmonder
+
+---
+
+I am currently the director of Institutional Excellence, Research, and Grants at Haywood Community College. My interests include institutional research, assessment, Power BI, R, and Python.

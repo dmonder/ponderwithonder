@@ -1,0 +1,16 @@
+---
+title: "Welcome To My Blog"
+author: "David Onder"
+date: "2022-09-01"
+categories: [news]
+slug: welcome
+tags: [welcome]
+subtitle: ''
+summary: ''
+lastmod: '2022-09-01T16:46:45-05:00'
+featured: no
+projects: []
+draft: false
+---
+
+This is the first post in my blog. Welcome!

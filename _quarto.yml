@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "PondeR with OndeR"
+  site-url: "https://ponderwithonder.org/"
+  description: "My personal ponderings"
+
+  navbar:
+    #title: false
+    search: true
+    right:
+      - posts.qmd
+      - icon: rss
+        href: posts.xml
+      - icon: linkedin
+        href: https://www.linkedin.com/in/dmonder/
+      - icon: github
+        href: https://github.com/dmonder
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+
+execute:
+  freeze: auto
