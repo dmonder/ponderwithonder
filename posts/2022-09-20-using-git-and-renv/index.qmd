@@ -1,0 +1,239 @@
+---
+title: Using Git and renv
+description: Reasons to use Git and renv in your R projects
+author: David Onder
+date: '2022-09-20'
+slug: using-git-and-renv
+categories: [blog, R, git, renv]
+tags: [R, workflow, git, renv]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-09-20'
+featured: no
+projects: []
+draft: true
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Using Git and renv
+
+When I create a new project in R, I also setup a new Git project (almost
+always connected to GitHub) and use
+[renv](https://rstudio.github.io/renv) to manage the packages. I thought
+I would take a few minutes to explain why I do this and show you a few
+examples of how this helps in developing and reusing code.
+
+## Using Git
+
+First, let's talk about Git. Git is a "distributed version control
+system" (<https://git-scm.com/>). The feature of Git that I find useful
+is being able to track changes in code as I develop new features of a
+report (which we will look at below). A Git setup does not need to be
+connected to GitHub, especially for locally managed projects. However,
+if you will be sharing your code or wish to have a backup of your code
+on a different machine in a different location, you can connect your Git
+project to an online repository like GitHub (<https://github.com/>),
+GitLab (<https://gitlab.com/>), or Bitbucket (<https://bitbucket.org/>).
+The most popular of these is GitHub, which is where I store my Git
+projects (<https://github.com/dmonder>,
+<https://github.com/Haywood-Community-College-IERG>).
+
+To install Git, go to the Git website and download a version for your OS
+and run the install. If you are using Windows, I would also recommend
+getting TortoiseGit (<https://tortoisegit.org/>), which is a "Windows
+Shell Interface to Git". This allows you to use the right-click menu to
+manage your Git repository. RStudio can also manage Git repositories,
+which I will show you below.
+
+Git's primary organization mode is a repository. This is typically a
+project that is maintained in a folder structure on your machine.
+Something like this:
+
+    |--- Project
+    |    |----.git
+    |    |    |--- ...
+    |    |--- data
+    |         |--- courses.csv
+    |         |--- students.csv
+    |--- source-file.r
+
+Files are added to the Git repository and, as changes are made, they are
+committed to the repository. Each change is tracked by Git.
+
+### Two use cases for Git
+
+I want to show you two use cases for using Git in your R projects. This
+would be overkill for a truly one-off project that you just need to get
+a number really quick, but for reports that you anticipate needing for
+more than one program or for multiple terms or years, this is a great
+resource to use. Here is why.
+
+#### Version history
+
+Once you have a good working version of a file, you would add that file
+to Git. To do that, you would execute `git add <file>`. In RStudio, once
+the folder has been initialized as a Git project, you will find a Git
+tab in one of the panes (usually the upper right). From there, you can
+select the files you want to add to Git by clicking the checkbox next to
+the file name. In the picture below, I have selected 6 files to be added
+to Git.
+
+![](images/paste-6BC36039.png)
+
+Once you have selected all the files you want to add, click Commit.
+
+![](images/paste-CCE4CA0E.png)
+
+RStudio responds by opening a Review Changes window where you can
+inspect each file and look at what has changed from what is stored in
+Git already. Since this is the first time, there will be no changes to
+show. Enter a `Commit message` in the provided box to describe what this
+change is all about. Since this is my first one, I will call it "Initial
+Commit". Click the `Commit` button to commit the files to Git.
+
+![](images/paste-4DB3D9D7.png)
+
+After you check in your code for the first time, you will then have
+access to comparing the existing file to previous versions of the file.
+Let's make a change to one of the files to see what this looks like.
+
+Let's create an output folder called `output` (I know, original).
+
+![](images/paste-DFD75411.png)
+
+Next, we will add this to the Git ignore file so Git will ignore files
+that appear in this folder. From the files tab, click on `.gitignore` to
+open it in the editor. Now add the following line to the file and save
+the file.
+
+    output
+
+Now, let's head back to the Git tab and see what has happened.
+
+![](images/paste-98680A4C.png)
+
+Notice the output folder does not appear and .gitignore now shows with a
+blue `M` in the status column. Let's select this file and click
+`Commit`. As you can see in the image below, the new line we added above
+is highlighted in green. That is how Git shows you what has been added
+to the file since the last time it was committed to Git. Very helpful.
+
+![](images/paste-77B232A4.png)
+
+Add a commit message ("Added output to .gitignore file") and commit the
+changes. You are successfully using Git to manage the changes to your
+code. Congratulations
+
+#### Branching
+
+One other very handy feature of Git that I will touch on briefly here is
+branching. This allows you to work on a new version of your project
+while maintaining the original version of the code unchanged.
+
+To create a branch, click the branch button on the Git tab.
+
+![](images/paste-43209D73.png)
+
+Give the branch a somewhat meaningful name (I am using
+"new-code-version" here) and then click the `Create` button.
+
+![](images/paste-070A9FBC.png)
+
+After clicking `Create`, RStudio will create the branch and
+automatically switch to it. Now when you make changes, they will not be
+on your main code (wish I would have taken my own advise on that last
+project...). Let's make a change and see what happens.
+
+Let's actually create an R code file in the main project folder called
+`mycode.R`. I am just going to add the line `1 + 2` and then save the
+file. Run the file to make sure it works. Everything OK, so far? Good.
+Now close the file.
+
+Let's go ahead and commit this file with the message "Added mycode.R"
+(your getting the hang of these messages now, aren't you?). Now let's
+see what we can do with this. Go back to the Git tab and in the upper
+right corner it shows the current branch, `new-code-version`. Click on
+that and you will see all the available branches.
+
+![](images/paste-0F0E715A.png)
+
+Click on `main` and RStudio will switch you back to the main branch. How
+do you know? Go back to the files tab and see that `mycode.R` is no
+longer in the project folder.
+
+![](images/paste-6F808F75.png)
+
+Sweet!
+
+Now, what if I am done with the new code and I want to make it the
+official version? That is the `merge` process, and RStudio does not do
+that natively. But it can be done with a simple set of steps.
+
+First, you need to be in the branch where you want the merge to take
+place (I am using `main`). Then open a Git shell from the menu (you can
+also do this from the Terminal).
+
+![](images/paste-3E84EC20.png)
+
+Now type `git merge new-code-version` (or whatever you called your
+branch) and Git will merge that branch into the current branch (again,
+`main` in my case).
+
+![](images/paste-965A8040.png)
+
+Done. Just like that the new code is now in the main branch. Want proof?
+On the Git tab, you can see that `main` is selected.
+
+![](images/paste-AA7FF670.png)
+
+And from the File tab, you can see that `mycode.R` is now in the file
+list.
+
+![](images/paste-B6A0E1B4.png)
+
+You can now delete the branch from the terminal using the command
+`git branch -d new-code-version`. Super powerful! This is a game changer
+for developing new code. There is so much more to Git. I just wanted to
+introduce you and whet your appetite. I hope that has you hungry for
+more. Hit your favorite search engine and see what else you can do with
+Git.
+
+## Using `renv`
+
+Now that you can manage your files' version history and create and use
+branches, let's look at making this project more reproducible. The R
+package `renv` allows you to create *environments* in which to run your
+code. This isolates your code from the rest of your system and from
+other projects. This means that packages installed in one project will
+not spill over and impact another project in an unexpected way.
+
+You can have RStudio automatically set up an `renv` environment when you
+create the project. If you have an existing folder in which you created
+your R project, you can just use the `renv::init()` command to
+initialize your project environment (if you use the command, be sure to
+close and reopen your project to pick up the new environment).
+
+That's it. RStudio will recognize this project is using `renv` and will
+load that environment when you open the project. Any packages you
+install will be installed in the local environment (there is some
+caching that happens behind the scenes to help save resources).
+
+Now you can install two different versions of `dplyr` in two different
+projects and you will not have any problems (chuckles under breath...).
+For the most part, this works seamlessly and is wonderful for keeping
+projects isolated. Also, as you add packages to your project, `renv` is
+updating a file called `renv.lock` that tracks the versions of the
+packages you installed. If you share that file with your package, others
+can use `renv` to recreate the same enviroment as you.
+
+Now **that** is powerful! And incredibly useful.
+
+## Conclusion
+
+I hope you found these two topics to be helpful. If you have ideas of
+what you would like to see on this blog, send me an email at
+[david\@ponderwithonder.org](mailto:david@ponderwithonder.org). Until
+next time, a pONDERring mind is a wONDERful mind. :)
