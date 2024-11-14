@@ -13,4 +13,4 @@ about:
 
 ---
 
-I am currently the director of Institutional Excellence, Research, and Grants at Haywood Community College. My interests include institutional research, assessment, Power BI, R, and Python.
+I am currently the director of Institutional Excellence, Research, and Grants at Haywood Community College. My interests include institutional research, assessment, Power BI, Quarto, R, and Python.
