@@ -10,9 +10,9 @@ subtitle: ''
 summary: ''
 authors: []
 lastmod: '2026-02-27T23:00:00-05:00'
-featured: no
+featured: yes
 projects: []
-draft: true
+draft: false
 ---
 
 ## I. The Hook: The "Adrian" Moment
