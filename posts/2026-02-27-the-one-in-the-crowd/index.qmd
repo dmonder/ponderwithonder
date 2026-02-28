@@ -27,9 +27,7 @@ During Jesus’ ministry, He lived in a "Rocky" environment every day. He was a 
 
 Mark 3:9 tells us:
 
-```{=typst}
-#scripture("Because of the crowd he told his disciples to have a small boat ready for him, to keep the people from crowding him.", "Mark 3:9")
-```
+> "Because of the crowd he told his disciples to have a small boat ready for him, to keep the people from crowding him." (NIV)
 
 The Greek word for "crowding" (συνωστίζω, synōstizō) implies crushing or pressing. They were grabbing His sleeves, shouting His name, blocking the roads. Most were there for the "show." They wanted a miracle, a free meal, or a political revolution.
 
@@ -45,9 +43,7 @@ Imagine this woman. For twelve years, she has been bleeding. In that culture, sh
 
 Read Mark 5:27-30, 34:
 
-```{=typst}
-#scripture("When she heard about Jesus, she came up behind him in the crowd and touched his cloak... At once Jesus realized that power had gone out from him. He turned around in the crowd and asked, 'Who touched my clothes?'", "Mark 5:27-30, 34")
-```
+> "When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak... At once Jesus was aware that power had gone out from Him. Turning to the crowd, He asked, 'Who touched My garments?'" (BSB)
 
 Jesus is on His way to save a dying girl. An important persons child. A "VIP" miracle. The crowd is pressing in. The disciples are acting like secret service agents, pushing people back. Then, He stops. Everything freezes. "Who touched my clothes?"
 
@@ -57,7 +53,7 @@ The Crowd touched Him out of curiosity or accidental proximity.
 
 The One touched Him with a specific, desperate faith that said, "If I can just reach the edge of His life, I will be changed."
 
-She thought the power was in the garment. But Jesus looked her in the eye to show her the power was in the relationship. He used the word "Sozo".
+She thought the power was in the garment. But Jesus looked her in the eye to show her the power was in the relationship. He used the word "Sozo" (σέσωκέν, sesōken).
 
 In the Greek, Sozo isn't just "your skin is fixed." It is a word used for being delivered from judgment, saved, and made whole. The crowd got a touch; she got a transformation. He calls her "Daughter". She is the only woman He ever addresses this way in the Gospels.
 
@@ -67,9 +63,7 @@ Leprosy was a living death. Your nerves died, your skin rotted, and you were cas
 
 Read Luke 17:12-19:
 
-```{=typst}
-#scripture(​"They stood at a distance and called out in a loud voice, 'Jesus, Master, have pity on us!' ... One of them, when he saw he was healed, came back, praising God in a loud voice. He threw himself at Jesus’ feet and thanked him... Jesus asked, 'Were not all ten cleansed? Where are the other nine?'", "Luke 17:12-19")
-```
+> ​"They stood at a distance and raised their voices, shouting, 'Jesus, Master, have mercy on us!' ... When one of them saw that he was healed, he came back, praising God in a loud voice. He fell facedown at Jesus’ feet in thanksgiving to Him... And Jesus, having answered, said, 'Were not the ten cleansed? But where are the nine?'" (BSB)
 
 All ten were obedient. All ten had enough faith to start walking toward the priest while they still had white spots on their skin. And all ten received a physical miracle. But nine of them were satisfied with the gift. They got what they wanted and went back to their lives.
 
@@ -87,9 +81,7 @@ Bartimaeus is sitting in the dirt outside Jericho. He is the "background noise" 
 
 Read Mark 10:47-48, 52:
 
-```{=typst}
-#scripture("When he heard that it was Jesus of Nazareth, he began to shout, 'Jesus, Son of David, have mercy on me!' Many rebuked him and told him to be quiet, but he shouted all the more... 'Go,' said Jesus, 'your faith has healed you (sozo)."', "Mark 10:47-48, 52")
-```
+> "When he heard that it was Jesus of Nazareth, he began to cry out, 'Jesus, Son of David, have mercy on me!' Many people admonished him to be silent, but he cried out all the louder... 'Go,' said Jesus, 'your faith has healed (sozo) you.'" (BSB)
 
 The crowd tried to be a filter for Jesus. They told Bartimaeus, "You’re just a beggar. Don't trouble the Master." But Bartimaeus was like Rocky. He didn't care about the judges' scorecards or the reporters. He screamed louder!
 
@@ -103,9 +95,7 @@ This isn't a New Testament "trick." This is how God has worked for thousands of 
 
 Read Genesis 15:5-6:
 
-```{=typst}
-#scripture("He took him outside and said, 'Look up at the sky and count the stars—if indeed you can count them.' ... Abram believed the Lord, and he credited it to him as righteousness.", "Genesis 15:5-6")
-```
+> And the LORD took him outside and said, 'Now look to the heavens and count the stars, if you are able.'... Abram believed the LORD, and it was credited to him as righteousness." (BSB)
 
 The world was full of people in Abraham's day. There were great kings and mighty armies. But God called one. There was no Law yet. There were no rituals or temples. There was only a promise and a man who chose to believe the Person behind the promise.
 
@@ -123,9 +113,7 @@ But Jesus is looking for the "Adrian" moment. He is looking for the one who:
 
 Read Ephesians 2:8-9:
 
-```{=typst}
-#scripture("For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast.", "Ephesians 2:8-9")
-```
+> "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God,not as a result of works, so that no one may boast." (BSB)
 
 You can't work your way into being "the one." You can't buy your way out of the crowd. It is a gift of grace, received through the kind of faith we see in the woman, the leper, and Bartimaeus.
 
