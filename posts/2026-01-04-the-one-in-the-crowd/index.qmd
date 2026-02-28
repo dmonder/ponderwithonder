@@ -15,7 +15,7 @@ projects: []
 draft: false
 ---
 
-## I. The Hook: The "Adrian" Moment
+## I. The "Adrian" Moment
 
 Think about the end of the first Rocky movie. The final bell has rung. The stadium is an absolute madhouse. Reporters are shoving microphones into his face, fans are screaming, the announcer is yelling over the PA system. Rocky is a mess. He’s bleeding, his ribs are broken, and his eyes are swollen shut. He is physically blinded by the battle. People are pressing in on every side, grabbing his robe, trying to get a piece of the man who went the distance.
 
@@ -111,7 +111,7 @@ The world was full of people in Abraham's day. There were great kings and mighty
 
 Like the woman, the leper, and the beggar, Abraham was "the one" because he responded to God’s voice with a personal trust that changed his identity. God didn't want Abraham’s "service"; He wanted his heart.
 
-## VII. Conclusion: Are You in the Crowd?
+## VII. Are You in the Crowd?
 
 We live in a "crowd" culture. We show up to church, we "press in" on Jesus, we say the prayers, and we hope for a "gumball" miracle. Put in a prayer, get out a result.
 
