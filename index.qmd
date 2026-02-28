@@ -1,5 +1,5 @@
 ---
-title: "PondeR with OndeR"
+title: "Ponder with Onder"
 image: profile.jpg
 about:
   template: jolla
@@ -13,4 +13,6 @@ about:
 
 ---
 
-I am currently the director of Institutional Excellence, Research, and Grants at Haywood Community College. My interests include institutional research, assessment, Power BI, Quarto, R, and Python.
+This is my personal blog. In it, I will share thoughts that intrigue me. Sometimes they will be related to Christ, the one who rules my life. Other times, they will be related to my work. I am currently the director of Institutional Excellence, Research, and Grants at Haywood Community College. At work, my interests include institutional research, assessment, Power BI, Quarto, R, and Python. 
+
+Enjoy!
